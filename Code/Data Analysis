@@ -1,0 +1,18 @@
+cqlsh -e"SELECT * FROM h1b_keyspace.h1b_table WHERE VISA_CLASS='E-3 Australian' ALLOW FILTERING" > e3-australian.txt;
+
+cqlsh -e"SELECT * FROM h1b_keyspace.h1b_table WHERE VISA_CLASS='E-3 Australian' ALLOW FILTERING" > e3austra.txt;
+
+cqlsh -e"SELECT COUNT(*) from h1b_keyspace.h1b_table WHERE H1B_DEPENDENT='Y'ALLOW FILTERING"> h1b_dependent.txt;
+
+cqlsh -e"SELECT SUM(TOTAL_WORKERS) from h1b_keyspace.h1b_table ALLOW FILTERING"> workers_count.txt;
+
+
+cqlsh -e"SELECT * from h1b_keyspace.h1b_table WHERE EMPLOYER_PHONE=9015235009 ALLOW FILTERING"> 9015235009_details.txt;
+
+
+cqlsh -e"SELECT * from h1b_keyspace.h1b_table WHERE EMPLOYER_PHONE=9015235009 ALLOW FILTERING"> 9015details.txt;
+
+cqlsh -e"SELECT * FROM h1b_keyspace.h1b_table" > h1b_details.txt;
+
+
+cqlsh -e"SELECT * FROM h1b_keyspace.h1b_table" > h1bdetails.txt;
