@@ -1,0 +1,6 @@
+UPDATE h1b_keyspace.h1b_table
+SET case_status = 'WITHDRAWN'
+where CASE_NUMBER = 'I-200-16055-173457';
+
+
+SELECT * FROM h1b_table WHERE VISA_CLASS='E-3 Australian' ;
